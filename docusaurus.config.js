@@ -14,23 +14,23 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   // organizationName: 'facebook', // Usually your GitHub org/user name.
-  organizationName: 'xqg1316',
+  organizationName: 'xqg1316', // github的用户名, https://github.com/xqg1316/blog
   // projectName: 'docusaurus', // Usually your repo name.
-  projectName: 'blog',
+  projectName: 'blog', // github的项目名称, https://github.com/xqg1316/blog
 
   presets: [
     [
       '@docusaurus/preset-classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-       // 注释掉下面的内容
-       docs: {
+        // 注释掉下面的内容
+        docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           //editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
           editUrl: 'https://github.com/xqg1316/blog/tree/master/docs/',
         }, 
-  // 注释掉下面的内容
+        // 注释掉下面的内容
         blog: {
           // showReadingTime: true,
           // Please change this to your repo.
