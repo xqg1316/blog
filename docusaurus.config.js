@@ -6,16 +6,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 (module.exports = {
   title: 'My Site',
   tagline: 'Dinosaurs are cool',
-  // url: 'https://your-docusaurus-test-site.com',
-  url: 'https://xqg1316.github.io',
-  // baseUrl: '/',
-  baseUrl: '/',
+  url: 'https://xqg1316.github.io', // 修改为Github Pages地址
+  baseUrl: '/', // Web界面显示时URL后面的"/xxx/"路径, 这里是个人是配置为"/"
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  // organizationName: 'facebook', // Usually your GitHub org/user name.
   organizationName: 'xqg1316', // github的用户名, https://github.com/xqg1316/blog
-  // projectName: 'docusaurus', // Usually your repo name.
   projectName: 'blog', // github的项目名称, https://github.com/xqg1316/blog
 
   presets: [
@@ -23,21 +19,27 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       '@docusaurus/preset-classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        // 注释掉下面的内容
-        docs: {
+        // 文档
+	docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          //editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
-          editUrl: 'https://github.com/xqg1316/blog/tree/master/docs/',
+          // 请把这个远程仓库换成自己的远程仓库, 默认为"editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',"
+	  // 项目放到gitee可以快速访问
+	  //editUrl: 'https://github.com/xqg1316/blog/tree/master/docs/',
+          editUrl: 'https://gitee.com/xqg1316/blog/tree/master/docs/',
         }, 
-        // 注释掉下面的内容
+	// 博客
         blog: {
-          // showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            // 'https://github.com/facebook/docusaurus/edit/main/website/blog/',
-            'https://github.com/xqg1316/blog/tree/master/blog/',
+          showReadingTime: true,
+          // 请把这个远程仓库换成自己的远程仓库, 默认为"editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/blog/',"
+	  // 项目放到gitee可以快速访问
+          //editUrl: 'https://github.com/xqg1316/blog/tree/master/blog/',
+	  editUrl: 'https://gitee.com/xqg1316/blog/tree/master/blog/',
         },
+	// API, 格式如下
+	/** api: {
+	  editUrl: 'https://gitee.com/xqg1316/blog/tree/master/api/',
+	}, */
+	// 主题
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
